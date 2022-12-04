@@ -1,0 +1,39 @@
+<div class="mid-container">
+    <div class="title">
+        <p>Seeking Wellbeing?</p>
+        <p>You’re in the right place.</p> 
+    </div>
+    <div class="mid-discover">
+        <mat-tab-group>
+            <mat-tab label="APPOINTMENTS">
+                <div class="discover">
+                    <mat-form-field appearance="fill">
+                        <mat-icon  matPrefix>search</mat-icon>
+                        <mat-label>Search for a service, provider or symptom</mat-label>
+                        <input matInput type="text">
+                    </mat-form-field>
+
+                    <mat-divider [vertical]="true"></mat-divider>
+
+                    <mat-form-field appearance="fill">
+                        <mat-icon matPrefix> location_on</mat-icon>
+                        <mat-label>Select a location</mat-label>
+                        <input matInput type="text">
+                    </mat-form-field>
+
+                    <mat-divider [vertical]="true"></mat-divider>
+
+                    <mat-form-field appearance="fill">
+                        <mat-icon matPrefix>calendar_today</mat-icon>
+                        <mat-label>When do you want to go?</mat-label>
+                        <input matInput type="text">
+                    </mat-form-field>
+
+                    <button mat-flat-button color="primary">Discover</button>
+                </div>
+            </mat-tab>
+            <mat-tab label="CLASSES"> </mat-tab>
+            <mat-tab label="ONLINE"> </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>

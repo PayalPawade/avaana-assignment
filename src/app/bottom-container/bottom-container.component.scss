@@ -1,0 +1,120 @@
+:host{
+
+    .bottom-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 120px;
+
+        .title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p{
+                font-size: 36px;
+                line-height: 3rem !important;
+            }
+            span{
+                margin-top: 20px;
+                margin-bottom: 40px;
+                font-size: 16px;
+                b{
+                    color: #00bd71;
+                }
+            }
+        }
+
+        .card-carousel{
+            display: flex;
+            flex-direction: row;
+            color: #095d59;
+            gap: 15px;
+
+            .mat-card-avatar{
+                border-radius: 15px;
+                min-width: 120px; 
+                min-height: 70px;
+                object-fit: cover;
+            }
+
+            .example-card {
+                max-width: 400px;
+                color: #095d59;
+                font-size: 16px;
+
+                .card-container{
+                    .card-fr{
+                        display: flex;
+                        flex-direction: row;
+                        font-weight: 600;
+                        justify-content: space-between;
+                    }
+
+                    .card-sr{
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 10px;
+                        justify-content: space-between;
+                        font-weight: 500;
+                        span{
+                            color: #00bd71;
+                        }
+                    }
+
+                    .card-tr{
+                        display: flex;
+                        flex-direction: row;
+                        font-weight: 500;
+                        justify-content: space-between;
+                        margin-top: 15px;
+                        div{
+                            background-color: #f5f5f5;
+                            padding: 10px;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    mat-divider{
+                        border-top-width: 2px;
+                        border-top-color: #095d59;
+                        transform: scale(0.9);
+
+                    }
+                }
+              }
+
+              .like-con{
+                color: #fd896b;
+              }
+
+             .mat-card-subtitle{
+                color: #095d59;
+             } 
+
+             
+              
+              .example-header-image {
+                background-image: url('https://material.angular.io/assets/img/examples/shiba2.jpg');
+                background-size: cover;
+              }
+              
+        }
+
+        .bind-btn{
+            margin-top: 80px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bottom-container{
+     .card-carousel{
+         flex-direction:column !important;  
+         }
+    } 
+}
+  
